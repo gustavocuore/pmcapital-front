@@ -11,32 +11,30 @@
     <link rel="stylesheet" href="assets/css/cadastro/button.css">
     <link rel="stylesheet" href="assets/css/cadastro/records.css">
     <link rel="stylesheet" href="assets/css/cadastro/modal.css">
-    <script src="sessao.js" defer></script>
-    <title>Sessões</title>
+    <script src="procedimento.js" defer></script>
+    <title>Procedimentos</title>
 </head>
 <body>
     <header>
-        <h1 class="header-title">Cadastro de Sessões</h1>
+        <h1 class="header-title">Cadastro de Procedimentos</h1>
     </header>
     <main>
         <a href="menu.html"><button type="button" class="button blue mobile">Menu</button></a>
-        <button type="button" class="button blue mobile" id="cadastrarSessao">Cadastrar Sessão</button>
+        <button type="button" class="button blue mobile" id="cadastrarProcedimento">Cadastrar Procedimento</button>
         <table class="records">
             <thead>
                 <tr>
-                    <th>Procedimento</th>
-                    <th>Cliente</th>
-                    <th>Atendente</th>
-                    <th>Data</th>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Cuidados</th>
                     <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Limpeza de Pele</td>
-                    <td>Maria</td>
-                    <td>Bruna</td>
-                    <td>05/07/2022</td>
+                    <td>200.00</td>
+                    <td>Evitar exposição solar</td>
                     <td>
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
@@ -44,9 +42,8 @@
                 </tr>
                 <tr>
                     <td>Lipo</td>
-                    <td>Sergio</td>
-                    <td>Tatiana</td>
-                    <td>10/08/2022</td>
+                    <td>5000.00</td>
+                    <td>Evitar exercícios físicos</td>
                     <td>
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
@@ -54,9 +51,8 @@
                 </tr>
                 <tr>
                     <td>Harmonização Facial</td>
-                    <td>Beatriz</td>
-                    <td>Vanessa</td>
-                    <td>23/09/2022</td>
+                    <td>9000.00</td>
+                    <td>Ficar em repouso</td>
                     <td>
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
@@ -67,12 +63,12 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h2>Nova Sessão</h2>
+                    <h2>Novo Procedimento</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome da Sessão">
-                    <input type="number" class="modal-field" placeholder="Valor da Sessão">
+                    <input type="text" class="modal-field" placeholder="Nome">
+                    <input type="number" class="modal-field" placeholder="Valor">
                 </form>
                 <footer class="modal-footer">
                     <button class="button green">Salvar</button>
