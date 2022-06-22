@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body_gradient_left: #7200d0;
+    --body_gradient_right: #c800c1;
+    --form_bg: #ffffff;
+    --input_bg: #e5e5e5;
+    --input_hover: #eaeaea;
+    --submit_bg: #97e8fc;
+    --submit_hover: #b3f0ff;
+    --icon_color: #6b6b6b;
+}
+
+
+body {
+    /* make the body full height*/
+    height: 100vh;
+    /* set our custom font */
+    font-family: 'Roboto', sans-serif;
+    /* create a linear gradient*/
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/06/12/Pink-and-Purple-Gradient-Ombre-Texture-Graphics-4343213-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+#form_wrapper {
+    width: 600px;
+    height: 400px;
+    /* this will help us center it*/
+    margin: auto;
+    background-color: var(--form_bg);
+    border-radius: 50px;
+    /* make it a grid container*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    /* with two columns of same width*/
+    /* with a small gap in between them*/
+    /* add some padding around */
+    padding: 5vh 140px;
+    gap: 10px;
+}
+
+.index-titulo {
+    color: var(--body_gradient_left);
+}
+
+.input_container {
+    background-color: var(--input_bg);
+    /* vertically align icon and text inside the div*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 100px; */
+}
+
+.input_container:hover {
+    background-color: var(--input_hover);
+}
+
+.input_container,
+#input_submit {
+    height: 30px;
+    /* make the borders more round */
+    border-radius: 30px;
+    width: 100%;
+}
+
+.input_field {
+    /* customize the input tag with lighter font and some padding*/
+    color: var(--icon_color);
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 2.5rem;
+}
+
+.input_field:hover,
+.input_field:focus {
+    /* remove the outline */
+    outline: none;
+}
+
+.logo {
+    height: 50px;
+    width: 100px;
+}
+
+#input_submit {
+    /* submit button has a different color and different padding */
+    background-color: var(--submit_bg);
+    
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+#input_submit:hover {
+    background-color: var(--submit_hover);
+    /* simple color transition on hover */
+    transition: background-color, 1s;
+    cursor: pointer;
+}
+
+h1,
+span {
+    text-align: center;
+}
+
+/* shift it a bit lower */
+#create_account {
+    display: block;
+    position: relative;
+    top: 30px;
+}
+
+a {
+    /* remove default underline */
+    text-decoration: none;
+    color: var(--submit_bg);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--submit_hover);
+}
+
+i {
+    color: var(--icon_color);
+}

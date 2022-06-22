@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cadastro/main.css">
+    <link rel="stylesheet" href="assets/css/cadastro/button.css">
+    <link rel="stylesheet" href="assets/css/cadastro/records.css">
+    <link rel="stylesheet" href="assets/css/cadastro/modal.css">
+    <script src="unidade.js" defer></script>
+    <title>Unidades</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Unidades</h1>
+    </header>
+    <main>
+        <a href="menu.html"><button type="button" class="button blue mobile">Menu</button></a>
+        <button type="button" class="button blue mobile" id="cadastrarUnidade">Cadastrar Unidade</button>
+        <table class="records" id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>Anapolis</td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>Jandira</td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose da Silva</td>
+                    <td>São Roque</td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="button green" id="PUT">editar</button>
+                        <button type="button" class="button red" id="DEL">excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Nova Unidade</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field-nome" placeholder="Nome">
+                    <input type="text" class="modal-field-endereco" placeholder="Endereço">
+                    <input type="text" class="modal-field-telefone" placeholder="Telefone">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green" id="POST">Salvar</button>
+                    <button class="button blue" id="exit">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

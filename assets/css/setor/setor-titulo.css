@@ -1,0 +1,5 @@
+.setor__titulo {
+    color: var(--title-text-color);
+    padding-top: 2em;
+    text-transform: uppercase;
+}
