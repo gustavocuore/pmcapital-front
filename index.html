@@ -15,23 +15,25 @@
 </head>
 
 <body>
-    <div id="form_wrapper">
-        <div><img src="assets/img/logo.png" alt="Youstetic logo" class="logo"/></div>
-        <h1>Login</h1>
-        <div class="input_container">
-            <i class="fas fa-user"></i>
-            <input placeholder="Usuário" type="text" name="Email" id="field_email" class="input_field" />
-        </div>
-        <div class="input_container">
-            <i class="fas fa-lock"></i>
-            <input placeholder="Senha" type="password" name="Password" id="field_password" class="input_field" />
-        </div>
-        <a href="escolha-unidade.html"><input type="submit" value="Login" id="input_submit" class="input_field" /></a>
-        <span>Esqueceu <a href="#"> Usuário / Senha ?</a></span>
-        <span id="create_account">
-            <a href="#">Crie sua conta ➡ </a>
-        </span>
-    </div>
+    <section class="flex-container">
+        <section class="flex-login">
+            <img src="assets/img/logo.png" alt="Youstetic logo" class="logo"/>
+            <h1>Login</h1>
+            <div class="input_container">
+                <i class="fas fa-user"></i>
+                <input placeholder="Usuário" type="text" name="user" id="field_user" class="input_field" />
+            </div>
+            <div class="input_container">
+                <i class="fas fa-lock"></i>
+                <input placeholder="Senha" type="password" name="Password" id="field_password" class="input_field" />
+            </div>
+            <a href="escolha-unidade.html"><input type="submit" value="Entrar" id="input_submit" class="input_field" /></a>
+            <span id="create_account">
+                <span>Esqueceu <a href="#"> Usuário / Senha ?</a></span>
+                <a href="#">Crie sua conta ➡ </a>
+            </span>
+        </section>
+    </section>
 </body>
 
 </html>
